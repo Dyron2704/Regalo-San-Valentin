@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/icons/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentos Juntos</title>
+    <link rel="stylesheet" href="videos.css">
+    <link rel="icon" type="image/png" href="https://images.emojiterra.com/microsoft/fluent-emoji/15.1/1024px/1f90d_flat.png">
+</head>
+<body>
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">×</button>
+        <a href="index.html">🤍 Carta de San Valentín</a>
+        <a href="galeria.html">📸 Nuestras Fotos</a>
+        <a href="cartas.html">💌 Todas las cartas. . .</a>
+        <a href="momentos.html">🎞️ Momentos Juntos</a>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+    <h2 class="titulo">Momentos Juntos</h2>
+    <div class="video-container">
+        <div class="video-item">
+            <video controls>
+                <source src="video/1.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <p>𝑮𝒓𝒂𝒄𝒊𝒂𝒔</p>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="video/2.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <p>𝒑𝒐𝒓</p>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="video/3.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <p>𝒔𝒆𝒓</p>
+        </div>
+    </div>
+    <div class="video-container">
+        <div class="video-item">
+            <video controls>
+                <source src="video/4.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <p> 𝒕𝒂𝒏 </p>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="video/5.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <p>𝒆𝒔𝒑𝒆𝒄𝒊𝒂𝒍 </p>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="video/6.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <p>𝓹𝓪𝓻𝓪 𝓶𝓲 </p>
+        </div>
+    </div>
+
+    <button class="btn" onclick="window.location.href='index.html';">Volver a la carta</button>
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

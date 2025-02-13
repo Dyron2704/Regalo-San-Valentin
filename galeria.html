@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/icons/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Fotos</title>
+    <link rel="stylesheet" href="fotos.css">
+    <link rel="icon" type="image/png" href="https://images.emojiterra.com/microsoft/fluent-emoji/15.1/1024px/1f90d_flat.png">
+    
+</head>
+</head>
+<body>
+
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">×</button>
+        <a href="index.html">🤍 Carta de San Valentín</a>
+        <a href="galeria.html">📸 Nuestras Fotos</a>
+        <a href="cartas.html">💌 Todas las cartas. . .</a>
+        <a href="momentos.html">🎞️ Momentos Juntos</a>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+
+    <h2 id="Fotos" class="shadow rounded bg-block">Nuestros Momentos</h2>
+
+    <ul id="listafotos">
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/10.jpg" alt="Cuando el otoño te da calabazas">
+                </div>
+                <figcaption>6 diciembre 2024</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/8.jpg" alt="Bebiendo agua en el agua">
+                </div>
+                <figcaption>10 mayo 2024</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/9.jpg" alt="Un atardecer palomitero">
+                </div>
+                <figcaption>29 septiembre 2024</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/4.jpg" alt="Un horneado cítrico">
+                </div>
+                <figcaption>23 diciembre 2024</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/3.jpg" alt="Crujidos en el bosque">
+                </div>
+                <figcaption>14 diciembre 2024</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/7.jpg" alt="Cosecha propia">
+                </div>
+                <figcaption>2 Febrero 2025</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/11.jpg" alt="Cuando el otoño te da calabazas">
+                </div>
+                <figcaption>22 septiembre 2024</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/12.jpg" alt="Bebiendo agua en el agua">
+                </div>
+                <figcaption>24 julio 2024</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/1.jpg" alt="Un atardecer palomitero">
+                </div>
+                <figcaption>31 octubre 2024</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/2.jpg" alt="Un horneado cítrico">
+                </div>
+                <figcaption>9 octubre 2024</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/13.jpg" alt="Crujidos en el bosque">
+                </div>
+                <figcaption>14 septiembre 2024</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <div class="image-container">
+                    <img src="img/14.jpg" alt="Cosecha propia">
+                </div>
+                <figcaption>24 de julio</figcaption>
+            </figure>
+        </li>
+    </ul>
+    
+
+    <button class="btn" onclick="window.location.href = 'index.html';">
+        Volver a la carta
+    </button>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
+

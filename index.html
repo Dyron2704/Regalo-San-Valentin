@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz San Valentín amor</title>
+    <link rel="icon" href="assets/icons/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="https://images.emojiterra.com/microsoft/fluent-emoji/15.1/1024px/1f90d_flat.png">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Boton Modo Oscuro -->
+        <button id="toggleDarkMode" class="floating-button">
+            <i class="ri-sun-line"></i>
+        </button>
+
+        <!-- Sección Inicial -->
+        <section class="section active" id="inicio">
+            <h1>Te amo África</h1>
+            <p>Desde que llegaste a mi vida, soy el hombre más feliz. ¿Me permites compartir algo especial contigo?</p>
+            <button class="btn" onclick="showSection('declaracion')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                    fill="none">
+                    <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> Siguiente</button>
+        </section>
+
+        <section class="section" id="declaracion">
+            <h1>¿Quieres ser mi San Valentín?</h1>
+            <p>Quiero que pasemos juntos toda la vida 
+                en
+                esta aventura llamada amor</p>
+            <div class="button-container">
+                <button class="btn" onclick="showSection('aceptacion')">¡Sí! 🤍</button>
+                <button class="btn" id="btnNo">¡No!</button>
+            </div>
+        </section>
+
+        <section class="section" id="aceptacion">
+            <h1>¡Sabía que dirías que sí!</h1>
+            <div class="carta">
+                <h1>Esta carta es para ti</h1>
+                <p>Mi amor,
+
+                    Ha pasado un año entero desde que pude darte aquella carta en el puerto de alicante como la 
+                    carta de san valentin que me llegó en medio de clase de latín. No sabes la ilusión que me dió verla
+                    cuando pensaba que solo me estaba imaginando las señales.
+                     <br>
+
+                    No hay palabras suficientes para expresar lo que siento por ti, pero quiero que sepas que todo lo
+                    lo que siento por ti me hace muy pero que muy feliz. Prometo amarte en los días soleados y en las noches oscuras,
+                    en los momentos de risas y en aquellos de lágrimas.Quiero que vivamos momentos innolvidables viajando por 
+                    todo el mundo y cuidando de nuestros hijos. <br>
+
+                    Eres la persona con la que quiero compartir cada dia de mi vida. Gracias por aceptar ser parte
+                    de mi vida y por permitirme ser parte de la tuya. Te amo más de lo que las palabras pueden decir, y 
+                    más de lo que te puedes pensar.<br>
+
+                    Te amo muchísimo,<br>
+                    - Dayron </p>
+                    <button class="btn" onclick="window.location.href = 'galeria.html';">
+                        Ver nuestras fotos
+                    </button>
+                    
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+h1,h2{
+    color: var(--color-titulo);
+    background-color: var(--color-bloque);
+}
+h1{
+    padding: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+#listafotos{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;   
+    justify-content: center;
+}
+
+#listafotos figure {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    width: 405px;
+}
+#listafotos figcaption {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+}
+
+#listafotos img {
+    object-fit: cover;
+    height: 300px;
+    width: 400px;
+    display: block;
+    transition: transform 0.3s ease-in-out; /* Transición para el zoom */
+}
+#listafotos img:hover{
+
+    transform: scale(1.1); /* Aplica el zoom al pasar el ratón */
+    z-index: 2;
+}
+   
+#listafotos div {
+    border-radius: 10px;
+    border: 5px black solid;
+    overflow: hidden;
+}
+.btn {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Para centrar con margin */
+    margin: 20px auto; /* Centra horizontalmente */
+}
+
+.btn:hover {
+    background-color: #d81b60;
+}
+h2 {
+    background: linear-gradient(45deg, #ff80ab, #d81b60);
+    color: white;
+    padding: 20px;
+    margin: 0%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+ .sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #ff80ab;
+    padding-top: 20px;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: #ff4081;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease;
+    z-index: 1100;
+}
+
+.sidebar.active ~ .menu-btn {
+    left: 270px;
+}
+
+.menu-btn:hover {
+    background: #d81b60;
+}
+
+section {
+    padding: 50px;
+}
